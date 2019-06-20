@@ -1,0 +1,12 @@
+plugins {
+	id 'java'
+	id 'checkstyle'
+}
+
+repositories {
+	mavenCentral()
+}
+
+checkstyle {
+	configProperties = ['config_loc' : project.file("config/nohttp")]
+}
