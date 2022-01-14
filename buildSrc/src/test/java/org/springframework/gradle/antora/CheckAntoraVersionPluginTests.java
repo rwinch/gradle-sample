@@ -19,11 +19,6 @@ class CheckAntoraVersionPluginTests {
 
 		Task task = project.getTasks().findByName(CheckAntoraVersionPlugin.ANTORA_CHECK_VERSION_TASK_NAME);
 
-		assertThat(task).isInstanceOf(CheckAntoraVersionTask.class);
-
-		CheckAntoraVersionTask checkAntoraVersionTask = (CheckAntoraVersionTask) task;
-
-		assertThat(checkAntoraVersionTask.getVersion().get()).isEqualTo("1.0.0-SNAPSHOT");
 	}
 
 }

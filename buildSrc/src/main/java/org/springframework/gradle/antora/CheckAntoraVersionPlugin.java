@@ -12,9 +12,6 @@ public class CheckAntoraVersionPlugin implements Plugin<Project> {
 		project.getTasks().register(ANTORA_CHECK_VERSION_TASK_NAME, CheckAntoraVersionTask.class, new Action<CheckAntoraVersionTask>() {
 			@Override
 			public void execute(CheckAntoraVersionTask antoraCheckVersion) {
-				String version = String.valueOf(project.getVersion());
-				antoraCheckVersion.getVersion().convention(version);
-				antoraCheckVersion.getAntoraYmlFile().convention(project.file("antora.yml"));
 			}
 		});
 	}
