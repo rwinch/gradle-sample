@@ -1,0 +1,10 @@
+plugins {
+	id 'java'
+	id 'io.spring.dependency-management'
+}
+//apply plugin:
+
+repositories {
+	// Use Maven Central for resolving dependencies.
+	mavenCentral()
+}

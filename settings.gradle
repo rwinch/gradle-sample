@@ -9,4 +9,5 @@
  */
 
 rootProject.name = 'gradle-sample'
+includeBuild 'gradle:plugins'
 include('lib')
