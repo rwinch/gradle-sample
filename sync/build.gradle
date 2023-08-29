@@ -1,0 +1,4 @@
+task processResources(type: Sync) {
+    from 'src/main/resources'
+    into 'build/resources/main'
+}
